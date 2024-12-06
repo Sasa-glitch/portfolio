@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A front-end developer personal website portfolio">
+    <meta name="keyword" content="front-end, developer, website, portfolio, career, hire">
+    <title>[Glitch] Salah's Portfolio</title>
+    <!-- Render all elements normally -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Fonts css file -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Add mini Icon -->
+    <link rel="shortcut icon" href="images/logo.webp">
+    <!-- Link google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <!-- 0.0782 Up button-->
+    <button class="up-button">
+      <i class="fa-solid fa-arrow-up"></i>
+      <i class="fa-regular fa-circle-xmark up-button__close"></i>
+    </button>
+    <!-- 1.0 Header -->
+    <header>
+      <div class="logo">
+        <img src="images/logo.webp" alt="">
+      </div>
+      <div class="slide-toggle" aria-label="toggle-navigation">
+        <span class="slider"></span>
+      </div>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+          <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+        </ul>
+      </nav>
+    </header> <!-- / 1.0 Header-->
+
+    <!-- 2.0 Introduction -->
+    <section id="home" class="intro">
+      <h1 class="section__title section__title--intro">
+        Hi I am <strong>
+                  Saladin
+                  <bold class="glitch__brackets">[<div class="glitch">
+                    GLITCH
+                    <span aria-hidden="true">GLITCH</span>
+                    <span aria-hidden="true">GLITCH</span>
+                  </div>]</bold>
+                </strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">&lt;front-end developer&#47;&gt;</p>
+      <img src="images/glitch.jpg" alt="A picture of SalaDin" class="intro__img">
+    </section> <!-- / 2.0 Introduction-->
+
+    <!-- 3.0 My Services -->
+    <section class="my-services" id="services">
+      <h2 class="section__title section__title--services">What I do</h2>
+      <div class="services">
+        <div class="service">
+          <h3>Custom Front-End Development</h3>
+          <p>I craft responsive, user-friendly websites using HTML, CSS, and JavaScript.
+            With a deep understanding of ES6, JS OOP and other modern JavaScript techniques,
+            I create interfaces that are clean, intuitive, and pixel-perfect.</p>
+        </div> <!-- /service -->
+
+        <div class="service">
+          <h3>API Integration & Dynamic Web Apps</h3>
+          <p>I use AJAX and simple REST APIs to create dynamic web pages that update without needing to reload.
+            I help bring your data to life with smooth interactions and efficient communication with the server,
+            ensuring a seamless experience for users.</p>
+        </div> <!-- /service -->
+
+        <div class="service">
+          <h3>ReactJS for Interactive Interfaces</h3>
+          <p>I work with ReactJS to build basic interactive web components. I focus on making small,
+            reusable parts of your site that work well together. My experience includes using React to create simple,
+            dynamic web pages and apps that update quickly and efficiently.</p>
+        </div> <!-- /service -->
+      </div> <!-- /services -->
+      <a href="#work" class="btn">My Work</a>
+    </section> <!-- / 3.0 My Services-->
+
+    <!-- 4.0 About Me -->
+    <section class="about-me" id="about">
+      <h2 class="section__title section__title--about">
+        Who I am
+      </h2>
+      <p class="section__subtitle--about section__subtitle">
+        Front-end developer based out of Cairo
+      </p>
+      <img src="images/salah.jpg" alt="" class="about-me__image">
+
+      <div class="about-me__body">
+        <span>Hey there! My name is Salah-ElDin, but you can call me <span class="glitch__brackets">
+          [<div class="glitch">
+          GLITCH
+          <span aria-hidden="true">GLITCH</span>
+          <span aria-hidden="true">GLITCH</span>
+        </div>]</span>
+        . I’m a passionate front-end developer with a love for crafting stunning,
+        user-friendly websites. My journey began with an obsession for design and problem-solving,
+        which naturally led me to the beautiful world of web development. Now,
+        I specialize in creating responsive, dynamic, and visually striking interfaces
+        that not only work seamlessly but also leave users in awe. 🖤✨</span>
+        <p>When I’m not immersed in code, you’ll find me exploring creative projects,
+        fine-tuning my skills, or diving into my other passions like tech and design trends.
+        I believe every pixel matters, and I approach each project with a blend of technical
+        expertise and artistic flair. For me, it’s all about transforming ideas into digital
+        experiences that inspire and connect. Let’s make something extraordinary together! 💻🌟</p>
+      </div>
+
+    </section> <!-- / 4.0 About Me-->
+
+    <!-- 5.0 My Work -->
+    <section class="my-work" id="work">
+      <h2 class="section__title section__title--work">
+        My Work
+      </h2>
+      <p class="section__subtitle section__subtitle--work">
+        A selection of my range of work
+      </p>
+
+      <div class="portfolio">
+        <!-- portfolio item 01 -->
+        <a href="https://glitch-leon-template.netlify.app" class="portfolio__item" target="_blank">
+          <img src="images/my-work1.JPG" alt="" class="portfolio__img">
+        </a>
+        <!-- portfolio item 02 -->
+        <a href="https://glitch-kasper-template.netlify.app" class="portfolio__item" target="_blank">
+          <img src="images/my-work2.JPG" alt="" class="portfolio__img">
+        </a>
+        <!-- portfolio item 03 -->
+        <a href="https://glitch-elzero-template.netlify.app" class="portfolio__item" target="_blank">
+          <img src="images/my-work3.JPG" alt="" class="portfolio__img">
+        </a>
+        <!-- portfolio item 04 -->
+        <a href="https://pixelgearz.netlify.app" class="portfolio__item" target="_blank">
+          <img src="images/my-work4.JPG" alt="" class="portfolio__img">
+        </a>
+        <!-- portfolio item 05 -->
+        <a href="https://glitch-meme-generator.netlify.app" class="portfolio__item" target="_blank">
+          <img src="images/my-work5.JPG" alt="" class="portfolio__img">
+        </a>
+        <!-- portfolio item 06 -->
+        <a href="https://glitch-tenzies.netlify.app" class="portfolio__item" target="_blank">
+          <img src="images/my-work6.JPG" alt="" class="portfolio__img">
+        </a>
+      </div>
+    </section> <!-- / 5.0 My Work-->
+
+    <!-- 6.0 Footer -->
+    <footer>
+      <a href="mailto:salahameer200@gmail.com?subject=contact" class="footer__link" target="_blank">salahameer200@gmail.com</a>
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a href="https://www.linkedin.com/in/salah-eldin-ameer-a2371924a/" class="social-list__link" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a href="https://github.com/Sasa-glitch" class="social-list__link"  target="_blank">
+            <i class="fa-brands fa-square-github"></i>
+          </a>
+        </li>
+      </ul>
+    </footer> <!-- / 6.0 Footer-->
+    <!-- Link JS -->
+    <script src="index.js"></script>
+  </body>
+</html>
