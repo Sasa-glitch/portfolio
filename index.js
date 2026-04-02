@@ -71,3 +71,45 @@ window.addEventListener('scroll', _ => {
     header.style.backgroundColor = "transparent";
   }
 });
+
+// Glitch image hover effects
+const introGlitch = document.querySelector('.intro-glitch');
+const introImg = document.querySelector('.intro__img');
+
+if (introGlitch && introImg) {
+  const originalIntroSrc = introImg.src;
+  const originalIntroAlt = introImg.alt;
+  
+  introGlitch.addEventListener('mouseenter', () => {
+    // using absolute/relative path as requested
+    introImg.src = "images/real_glitch.jpg";
+    introImg.alt = "glitch";
+    introImg.classList.add('glitch-anim');
+  });
+  
+  introGlitch.addEventListener('mouseleave', () => {
+    introImg.src = originalIntroSrc;
+    introImg.alt = originalIntroAlt;
+    introImg.classList.remove('glitch-anim');
+  });
+}
+
+const aboutGlitch = document.querySelector('.about-glitch');
+const aboutImg = document.querySelector('.about-me__image');
+
+if (aboutGlitch && aboutImg) {
+  const originalAboutSrc = aboutImg.src;
+  const originalAboutAlt = aboutImg.alt;
+  
+  aboutGlitch.addEventListener('mouseenter', () => {
+    aboutImg.src = "images/real_glitch1.jpg";
+    aboutImg.alt = "glitc";
+    aboutImg.classList.add('glitch-anim');
+  });
+  
+  aboutGlitch.addEventListener('mouseleave', () => {
+    aboutImg.src = originalAboutSrc;
+    aboutImg.alt = originalAboutAlt;
+    aboutImg.classList.remove('glitch-anim');
+  });
+}
