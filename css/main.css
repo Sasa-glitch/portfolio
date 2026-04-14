@@ -564,14 +564,9 @@ header {
     border-radius: 1em;
 }
 
-.skill__icon--svg {
-    width: 1em;
-    height: 1em;
-    font-size: inherit;
-}
-
 .skill__icon {
     font-size: 2.5em;
+    justify-self: center;
 }
 
 .skill__text {
